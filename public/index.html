@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屏幕共享 - 共享端</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>屏幕共享 - 共享端</h1>
+        
+        <div class="screen-preview">
+            <video id="screenPreview" autoplay muted></video>
+        </div>
+        
+        <div class="controls">
+            <button id="startSharing">开始共享屏幕</button>
+            <button id="stopSharing" disabled>停止共享</button>
+        </div>
+        
+        <div class="share-info" id="shareInfo" style="display: none;">
+            <h2>共享链接</h2>
+            <p>将以下链接分享给需要观看的人：</p>
+            <div class="link-container">
+                <input type="text" id="shareLink" readonly>
+                <button id="copyLink">复制链接</button>
+            </div>
+        </div>
+        
+        <div class="status">
+            <p id="statusText">准备就绪</p>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

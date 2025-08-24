@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屏幕共享查看器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>屏幕共享查看器</h1>
+        
+        <div class="viewer-controls">
+            <input type="text" id="roomIdInput" placeholder="输入房间号">
+            <button id="joinRoom">加入房间</button>
+        </div>
+        
+        <div class="screen-viewer">
+            <video id="screenViewer" autoplay playsinline></video>
+        </div>
+        
+        <div class="status" id="viewerStatus">请输入房间号并加入</div>
+        
+        <div class="controls">
+            <button id="leaveRoom" disabled>离开房间</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>
