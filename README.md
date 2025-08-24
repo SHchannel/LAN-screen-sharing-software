@@ -69,7 +69,7 @@ screenshare/
 2. 首次使用屏幕共享时，浏览器会提示您选择要共享的屏幕或窗口
 3. 为了获得最佳体验，建议在局域网内使用此应用
 4. 如果需要在公网使用，可能需要配置STUN/TURN服务器
-5. 如果没有安装Node-js，请在"https://nodejs.org/en/download"下载Node-js
+5. 如果没有安装Node-js，请在此网站下载https://nodejs.org/en/download
 
 ## 技术细节
 
